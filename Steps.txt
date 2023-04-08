@@ -1,0 +1,25 @@
+HIGH_LEVEL OVERVIEW 
+
+Collect a large dataset of text with annotated sentiment labels (e.g. positive, negative, neutral)
+Pre-process the text data by cleaning, tokenizing, and removing stop words
+Create a feature set from the pre-processed text, such as word frequency or TF-IDF
+Train a machine learning model, such as a Naive Bayes classifier or a Support Vector Machine (SVM), on the feature set and sentiment labels
+Evaluate the performance of the model using metrics such as accuracy, precision, recall, and F1-score
+Fine-tune the model using techniques such as hyperparameter tuning and feature selection, if necessary
+
+
+
+PRE_PROCESSING 
+
+Removing special characters and symbols: Some tweets may contain special characters and symbols that are not relevant to the sentiment analysis and can be removed. This can include hashtags, mentions, and URLs.
+Removing stop words: Stop words are common words that do not provide much meaning in the context of sentiment analysis. These words can be removed to reduce the dimensionality of the data and increase the accuracy of the analysis.
+Lowercasing text: To avoid any confusion between uppercase and lowercase words, it's a good practice to convert all text to lowercase.
+Removing punctuation: Punctuation marks may not be relevant for sentiment analysis and can be removed.
+Tokenizing: Tokenizing is the process of breaking down the text into individual words or phrases. This is an important step for sentiment analysis, as it allows for the identification of key words and phrases that may be indicative of sentiment.
+Stemming or Lemmatizing: Stemming is the process of reducing inflected words to their word stem, base or root form, so that words with similar meaning will be reduced to the same form, while Lemmatizing is the process of reducing a word to its base form. This step is important to reduce the dimensionality of the data and increase the accuracy of the analysis.
+Removing Emoji and emoticons: Emoji and emoticons can carry a lot of sentiment information, but they are not always easy to process, it's best to remove them if you want to focus on the text sentiment only.
+Removing elongated words: As discussed before, elongated words are words that have repeated letters, usually used to indicate emphasis or excitement. These words may not be useful for the analysis and can be removed.
+Removing HTML tags and XML tags: Some tweets may contain HTML or XML tags, which are not relevant for sentiment analysis and can be removed.
+Handling hashtags: Hashtags can carry a lot of information, but they should be handled carefully. Some hashtags are used to indicate the topic of the tweet, but others may be used to indicate sentiment. Identifying the sentiment of hashtags can be useful for sentiment analysis.
+
+
